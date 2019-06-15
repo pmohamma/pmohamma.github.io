@@ -80,10 +80,10 @@ div.half{
 	letter-spacing: 1px;
 }
 
-div.socials img {
+div.flex-container img {
 	border-radius: 25px;
-	width: 15%;
-	height: 15%;
+	width: 20%;
+	height: 20%;
 	float:left;
 }
 
@@ -93,6 +93,17 @@ a:link {
 
 a:visited {
   color: whitesmoke;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  width: 70%;
+  margin:auto;
+  justify-content: space-between;
+  align-items:stretch;
+  align-content: stretch;
 }
 
 .href_title{
