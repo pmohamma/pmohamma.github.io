@@ -1,0 +1,210 @@
+body{
+	background-image: url("../images/church-background.jpeg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	width: 100%;
+}
+
+
+h1{
+	text-align: center;
+	font-family: "Avantgarde, TeX Gyre Adventor, URW Gothic L", sans-serif;
+	letter-spacing: 3px;
+	word-spacing: 5px;
+	color: black;
+}
+
+p{
+	font-family: "Georgia", Georgia, serif;
+}
+
+nav {
+  width: 100%;
+  margin: 0px 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+/* Make the list of links take up the whole width of the nav */
+nav ul {
+  width: 100%; /* from above */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  width: 20%; 
+  float:left;
+  background-color: black;
+  opacity: 0.6;
+  line-height: 40px;
+  border-bottom: solid white 2px;
+}
+nav ul li a {
+  display: block;
+  width: 100%; 
+  text-align:center;
+  text-decoration:none;
+}
+
+nav ul li a:hover {
+  background-color:gray;
+  font-size:1.3vw;
+}
+
+div.banners {
+	width: 100%; 
+	border-top: solid; 
+	border-width: 2px; 
+	border-color: white; 
+	overflow:auto;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 40px;
+}
+
+div.banners p{
+	font-size: 2vw; 
+	color: white; 
+	float:left; 
+	text-align: left; 
+	margin-top: -1px;
+}
+
+div.half{
+	width: 50%;
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+div.socials img {
+	border-radius: 25px;
+	width: 15%;
+	height: 15%;
+	float:left;
+}
+
+a:link {
+  color: whitesmoke;
+}
+
+a:visited {
+  color: whitesmoke;
+}
+
+.href_title{
+	width: 100%;
+	text-align: center;
+	font-size: 5vw;
+	display: block;
+	float: left;
+	font-size: 3vw;
+	margin-top:-10px;
+}
+
+.href_title a:hover, active{
+	color:#C7C7C7;
+}
+
+p.fan_club{
+	width: 100%;
+	text-align: center;
+	font-size: 5vw;
+}
+
+div.fan_club{
+	width: 100%;
+	text-align: center;
+}
+
+#fan_club_name{
+	height:23px;
+	width:20%;
+	text-align:center;
+	margin-bottom: -10px;
+}
+
+.fan_club_join{
+	border:none;
+	border-radius:20px;
+	font-family: "Georgia", Georgia, serif;
+}
+
+#fan_club_button{
+	overflow:auto; 
+	font-size: 1.5vw; 
+	background: rgba(125, 125, 231, 0.3); 
+	color:#E0E0E5;
+}
+
+#fan_club_button:hover{
+	transform: scale(1.2);
+}
+
+#fan_club_button:hover:active{
+	background: rgba(105, 103, 103, 0.6);
+}
+
+.hide_image{
+	margin-top: -20px;
+}
+
+.space { margin-top: 10%; }
+
+div.head_spacer {
+	height: 0px;
+}
+
+#drawn_name {
+	width:70%; 
+	float-right; 
+	margin-left:25%; 
+	margin-top: -5%;
+}
+
+.phone_breaks {
+	display:none;
+}
+
+@media only screen and (max-width: 1200px) {
+	div.head_spacer {
+		margin-top: 20px;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+    div.head_spacer {
+		margin-top: 50px;
+	}
+
+	.phone_breaks {
+		display: block;
+	}
+
+	#drawn_name {
+		margin-top:10%;
+	}
+
+    .hide_image {
+        display: none;
+    }
+    .href_title{
+    	display: block;
+    	float: left;
+    	font-size: 5vw;
+    }
+    div.half{
+    	width: 100%;
+    }
+    h1{
+    	margin-bottom: -5px;
+    	font-size: 7vw;
+    }
+    #resume_text{
+    	margin-bottom: -5px;
+    }
+}
+
