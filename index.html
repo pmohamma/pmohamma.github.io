@@ -7,21 +7,24 @@
 	<!--[if lt IE 9]>
 	  <script src="https://www.noupe.comdist/html5shiv.js"></script>
 	<![endif]-->
-	<script type="text/javascript">
-		function show_noshow() {
-		  var x = document.getElementById("main_content");
-		  var y = document.getElementById("ham_menu")
-		  if (y.style.background !== "transparent") {
-		    	x.style.display = "block"
-		  } else {
-		    x.style.display = "none"
-		  }
+	<script>
+		x=false;
+		function Check(){
+		    if(x){    
+				document.getElementById("main_content").style.display='inline';
+				x=false;
+		    }
+		    else{
+			 	document.getElementById("main_content").style.display='none'; 
+				x=true;    
+		    }
+
 		}
 	</script>
 </head>
 <body>
 	<label>
-	  <input type="checkbox" onclick = "show_noshow()"></input>
+	  <input type="checkbox" onclick = "Check()"></input>
 	  <span class="menu" id = "ham_menu">
 	    <span class="hamburger"></span>
 	  </span>
