@@ -7,11 +7,45 @@
 	<!--[if lt IE 9]>
 	  <script src="https://www.noupe.comdist/html5shiv.js"></script>
 	<![endif]-->
+	<script type="text/javascript">
+		function show_noshow() {
+		  var x = document.getElementById("main_content");
+		  var y = document.getElementById("ham_menu")
+		  if (y.style.background !== "transparent") {
+		    	x.style.display = "block"
+		  } else {
+		    x.style.display = "none"
+		  }
+		}
+	</script>
 </head>
 <body>
-	<div class = "head_spacer"> </div>
-	<img id = "drawn_name" src = "images/hand-drawn-name.png" alt = "Pouya Mohammadi" >
-	<div class = "main_content">
+	<label>
+	  <input type="checkbox" onclick = "show_noshow()"></input>
+	  <span class="menu" id = "ham_menu">
+	    <span class="hamburger"></span>
+	  </span>
+	  <ul>
+	  	<a href="#">
+		    <li>
+		      Home
+		    </li>
+		</a>
+	    <a href="#professionals">
+		    <li>
+		     About
+		    </li>
+	    </a>
+	    <a href="#">
+		    <li>
+		    	Work
+		    </li>
+	    </a>
+	  </ul>
+	</label>
+
+	<img id = "drawn_name" src = "images/hand-drawn-name.png" alt = "Pouya Mohammadi" style = "display: inline;">
+	<div id = "main_content">
 	<br class = "phone_breaks"><br class = "phone_breaks"><br class = "phone_breaks"><br class = "phone_breaks">
 	<p style = "color:white; font-size: 1.5vw; margin:auto; width: 80%; word-spacing: 2px; text-shadow: 2px">
 	A little bit about me. I am an undergraduate student at Duke University that hails from Austin, TX. This part is just a whole lot of filler. This part is just a whole lot of filler.This part is just a whole lot of filler.This part is just a whole lot of filler.This part is just a whole lot of filler.This part is just a whole lot of filler.This part is just a whole lot of filler.</p>
@@ -66,34 +100,23 @@
 	   		</a>
 	   		</div>
 		</div> -->
-<!--	<div class="dropdown">
-		<button class="hamburger" type="button">
-		  <span class="hamburger-box">
-		    <span class="hamburger-inner"></span>
-		    <div class="dropdown-content">
-			    <a href="#">Link 1</a>
-			    <a href="#">Link 2</a>
-			    <a href="#">Link 3</a>
-			  </div>
-		  </span>
-		</button>
-	</div> -->
-	<div style = "top-margin: 1000px">
+
+	<br><br><br><br>
+	<div class = "sections" style = "top-margin: 1000px;">
 	<div class = "banners" id = "socials">
 		<p> my socials</p>
 	</div>
 	
 	<p style = "width: 100%; font-size: 2.5vw; text-align:center; color: white"> Peep my socials. </p>
-	<div class="flex-container">
+	<div class="flex-container" style = "margin-bottom: 120px">
 		<a href = "https://www.instagram.com/go_poo_ya_pants/" style = "width:100px; opacity: 0.9"><img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMyVYl6FkwQJ_KvWpM9OlukBogF2t2NBno8WtuftQIdYgWmu3JFA"> </a>
 		<a href = "https://www.facebook.com/pouya.mohammadi.37" style = "width:100px; opacity: 0.9"><img src = "https://d2v9ipibika81v.cloudfront.net/uploads/sites/261/2017/01/facebook-logo-3.png" ></a>
 		<a href = "https://twitter.com/_pouyamohammadi" style = "width:100px; opacity: 0.9"><img src = "https://seeklogo.com/images/T/twitter-2012-negative-logo-5C6C1F1521-seeklogo.com.png" > </a>
 		<a href = "https://www.linkedin.com/in/pmohammadi/" style = "width:100px; opacity: 0.9"> <img src = "https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"> </a>
 	</div>
 	<div style="clear:both"></div>
-	<br><br><br><br>
-	<p class = "fan_club" style="color:white; margin-bottom: 9px"> Join my fan club. </p>
-
+	</div>
+	
 	<div class = "banners" id = "about_me">
 		<p> About Me </p>
 	</div>
@@ -103,6 +126,8 @@
 		<p> Contact Me </p>
 	</div>
 
+	<p class = "fan_club" style="color:white; margin-bottom: 9px"> Join my fan club. </p>
+
 	<div class = "fan_club">
 		<form>
 			<!-- <input class = "fan_club_join" id = "fan_club_name" type = "text" name = "name" placeholder = "Enter Full Name" required style = "margin-top: 0px; ">
@@ -111,6 +136,7 @@
 				Click here
 			</button>
 		</form>
+	</div>
 	</div>
 
 </div>
