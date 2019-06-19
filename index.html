@@ -9,7 +9,7 @@
 	<![endif]-->
 	<script>
 		x=false;
-		function Check(){
+		function show_noshow(){
 		    if(x){    
 				document.getElementById("main_content").style.display='inline';
 				x=false;
@@ -20,32 +20,60 @@
 		    }
 
 		}
+
+		function open_loc(loc){
+			event.preventDefault();
+		 	show_noshow();
+			location.href = loc;
+			document.getElementById("menu_check").checked = false;
+		}
 	</script>
 </head>
 <body>
 	<label>
-	  <input type="checkbox" onclick = "Check()"></input>
+	  <input type="checkbox" onclick = "show_noshow()" id = "menu_check"></input>
 	  <span class="menu" id = "ham_menu">
 	    <span class="hamburger"></span>
 	  </span>
 	  <ul>
-	  	<a href="#">
+	  	<a class = "menu_link" href="#socials" onclick = "open_loc('#')">
 		    <li>
 		      Home
 		    </li>
 		</a>
-	    <a href="#professionals">
+	    <a class = "menu_link" href = "#professionals" onclick = "open_loc('#professionals');">
 		    <li>
-		     About
+		     Professionals
 		    </li>
 	    </a>
-	    <a href="#">
+	    <a class = "menu_link" href="#socials" onclick = "open_loc('#socials')">
 		    <li>
-		    	Work
+	    	Socials
 		    </li>
 	    </a>
+	  	<a class = "menu_link" href="#about_me" onclick = "open_loc('#about_me')">
+		    <li>
+		      About Me
+		    </li>
+		</a>
+	  	<a class = "menu_link" href="#contact" onclick = "open_loc('#contact')">
+		    <li>
+		      Contact
+		    </li>
+		</a>
 	  </ul>
 	</label>
+	<script type = "text/javascript">
+	    // Get a reference to "myhref".
+	    var myhref = document.getElementByClass("menu_link");
+	    // Get a reference to "myfield".
+	    var myfield = document.getElementById("menu_check");
+	    // Attach an event listener to "myhref", which gets notifier when "myhref" is clicked.
+	    myhref.addEventListener("click", function() {
+	        // "myhref" is click. So, uncheck "myfield"
+	       	myfield.checked = false;
+	    });
+	</script>
 
 	<img id = "drawn_name" src = "images/hand-drawn-name.png" alt = "Pouya Mohammadi" style = "display: inline;">
 	<div id = "main_content">
@@ -54,6 +82,9 @@
 	A little bit about me. I am an undergraduate student at Duke University that hails from Austin, TX. This part is just a whole lot of filler. This part is just a whole lot of filler.This part is just a whole lot of filler.This part is just a whole lot of filler.This part is just a whole lot of filler.This part is just a whole lot of filler.This part is just a whole lot of filler.</p>
 	<div class = "space"> </div>
 	<p style = "font-size: 2.5vw; text-align:center; color: white; width: 100%"> Scroll to find out more. </p>
+	<!-- <p style = "font-size: 1vw; text-align:center; color: white; width: 100%; top-margin:-250px; display:inline-block"> (or click here.) </p>
+	<img src = "images/arrow.png" style = "display:inline-block"> -->
+
 	<div style = "margin-top: 35%"> </div>
 	
 	<div id = "nav-bar-sticky">
@@ -86,7 +117,7 @@
 		<br class = "phone_breaks"><br class = "phone_breaks"><br class = "phone_breaks">
 		
 		<p class = "href_title" id = "resume_text"><a href="resume.html">Resume</a></p>
-		<p class = "href_title"><a href="transcript.html">Unofficial Transcript</a></p>
+		<p class = "href_title"><a href="transcript.html">Courses Taken</a></p>
 	</div>
 		<!--<div class = "half" style="width: 100%; margin-top: -50px; margin-bottom: 450px;">
 	   		<div class = "half" style="float:left;">
