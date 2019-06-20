@@ -7,27 +7,6 @@
 	<!--[if lt IE 9]>
 	  <script src="https://www.noupe.comdist/html5shiv.js"></script>
 	<![endif]-->
-	<script>
-		x=false;
-		function show_noshow(){
-		    if(x){    
-				document.getElementById("main_content").style.display='inline';
-				x=false;
-		    }
-		    else{
-			 	document.getElementById("main_content").style.display='none'; 
-				x=true;    
-		    }
-
-		}
-
-		function open_loc(loc){
-			event.preventDefault();
-		 	show_noshow();
-			location.href = loc;
-			document.getElementById("menu_check").checked = false;
-		}
-	</script>
 </head>
 <body>
 	<label>
@@ -63,17 +42,6 @@
 		</a>
 	  </ul>
 	</label>
-	<script type = "text/javascript">
-	    // Get a reference to "myhref".
-	    var myhref = document.getElementByClass("menu_link");
-	    // Get a reference to "myfield".
-	    var myfield = document.getElementById("menu_check");
-	    // Attach an event listener to "myhref", which gets notifier when "myhref" is clicked.
-	    myhref.addEventListener("click", function() {
-	        // "myhref" is click. So, uncheck "myfield"
-	       	myfield.checked = false;
-	    });
-	</script>
 
 	<img id = "drawn_name" src = "images/hand-drawn-name.png" alt = "Pouya Mohammadi" style = "display: inline;">
 	<div id = "main_content">
@@ -175,6 +143,40 @@
 
 </div>
 </div>
+
+<script>
+	x=false;
+	function show_noshow(){
+	    if(x){    
+			document.getElementById("main_content").style.display='inline';
+			x=false;
+	    }
+	    else{
+		 	document.getElementById("main_content").style.display='none'; 
+			x=true;    
+	    }
+
+	}
+
+	function open_loc(loc){
+		event.preventDefault();
+	 	show_noshow();
+		location.href = loc;
+		document.getElementById("menu_check").checked = false;
+	}
+</script>
+<script type = "text/javascript">
+    // Get a reference to "myhref".
+    var myhref = document.getElementByClass("menu_link");
+    // Get a reference to "myfield".
+    var myfield = document.getElementById("menu_check");
+    // Attach an event listener to "myhref", which gets notifier when "myhref" is clicked.
+    myhref.addEventListener("click", function() {
+        // "myhref" is click. So, uncheck "myfield"
+       	myfield.checked = false;
+    });
+</script>
+
 </body>
 </html>
 
