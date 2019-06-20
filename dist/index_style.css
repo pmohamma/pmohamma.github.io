@@ -14,6 +14,7 @@ label .menu {
   transition: 0.5s ease-in-out;
   box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
   cursor: pointer;
+  position: fixed;
 }
 label .hamburger {
   position: absolute;
@@ -25,6 +26,7 @@ label .hamburger {
   display: block;
   transform-origin: center;
   transition: 0.5s ease-in-out;
+  /*position:fixed;*/
 }
 label .hamburger:after, label .hamburger:before {
   transition: 0.5s ease-in-out;
@@ -88,7 +90,9 @@ label li {
   overflow-x: hidden;
   text-align:center;
 }
-
+#all_menu_links{
+	display:none;
+}
 
 
 body{

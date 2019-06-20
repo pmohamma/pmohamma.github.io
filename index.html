@@ -14,33 +14,35 @@
 	  <span class="menu" id = "ham_menu">
 	    <span class="hamburger"></span>
 	  </span>
-	  <ul>
-	  	<a class = "menu_link" href="#socials" onclick = "open_loc('#')">
-		    <li>
-		      Home
-		    </li>
-		</a>
-	    <a class = "menu_link" href = "#professionals" onclick = "open_loc('#professionals');">
-		    <li>
-		     Professionals
-		    </li>
-	    </a>
-	    <a class = "menu_link" href="#socials" onclick = "open_loc('#socials')">
-		    <li>
-	    	Socials
-		    </li>
-	    </a>
-	  	<a class = "menu_link" href="#about_me" onclick = "open_loc('#about_me')">
-		    <li>
-		      About Me
-		    </li>
-		</a>
-	  	<a class = "menu_link" href="#contact" onclick = "open_loc('#contact')">
-		    <li>
-		      Contact
-		    </li>
-		</a>
-	  </ul>
+		  <ul>
+		  	  <div id = "all_menu_links">
+			  	<a class = "menu_link" href="#" onclick = "open_loc('#')">
+				    <li>
+				      Home
+				    </li>
+				</a>
+			    <a class = "menu_link" href = "#professionals" onclick = "open_loc('#professionals');">
+				    <li>
+				     Professionals
+				    </li>
+			    </a>
+			    <a class = "menu_link" href="#socials" onclick = "open_loc('#socials')">
+				    <li>
+			    	Socials
+				    </li>
+			    </a>
+			  	<a class = "menu_link" href="#about_me" onclick = "open_loc('#about_me')">
+				    <li>
+				      About Me
+				    </li>
+				</a>
+			  	<a class = "menu_link" href="#contact" onclick = "open_loc('#contact')">
+				    <li>
+				      Contact
+				    </li>
+				</a>
+			</div>
+		  </ul>
 	</label>
 
 	<img id = "drawn_name" src = "images/hand-drawn-name.png" alt = "Pouya Mohammadi" style = "display: inline;">
@@ -58,7 +60,7 @@
 	<div id = "nav-bar-sticky">
 	<nav>
 	  <ul>
-	    <li>
+	  	<li>
 	        <a href="/">Home</a>
 	    </li>
 	    <li>
@@ -149,10 +151,12 @@
 	function show_noshow(){
 	    if(x){    
 			document.getElementById("main_content").style.display='inline';
+			document.getElementById("all_menu_links").style.display='none';
 			x=false;
 	    }
 	    else{
-		 	document.getElementById("main_content").style.display='none'; 
+		 	document.getElementById("main_content").style.display='none';
+			document.getElementById("all_menu_links").style.display='inline-block';
 			x=true;    
 	    }
 
