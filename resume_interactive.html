@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+<head>
+	<title>
+	Pouya's Resume
+	</title>
+	<script type = "text/javascript" src = "scripts/hamburger_menu.js" ></script>
+	<link rel = "stylesheet" href="dist/resume_interactive.css">
+</head>
+
+<body style = "background-image: url('images/desk_background.jpg')">
+	<label>
+	  <input type="checkbox" onclick = "show_noshow()" id = "menu_check"></input>
+	  <span class="menu" id = "ham_menu">
+	    <span class="hamburger"></span>
+	  </span>
+		  <ul>
+		  	  <div id = "all_menu_links">
+			  	<a class = "menu_link" href="index.html" onclick = "open_loc('index.html')">
+				    <li>
+				      Home
+				    </li>
+				</a>
+			    <a class = "menu_link" href = "index.html/#professionals" onclick = "open_loc('index.html/#professionals');">
+				    <li>
+				     Professionals
+				    </li>
+			    </a>
+			    <a class = "menu_link" href="index.html/#socials" onclick = "open_loc('index.html/#socials')">
+				    <li>
+			    	Socials
+				    </li>
+			    </a>
+			  	<a class = "menu_link" href="index.html/#about_me" onclick = "open_loc('index.html/#about_me')">
+				    <li>
+				      About Me
+				    </li>
+				</a>
+			  	<a class = "menu_link" href="index.html/#contact" onclick = "open_loc('index.html/#contact')">
+				    <li>
+				      Contact
+				    </li>
+				</a>
+			</div>
+		  </ul>
+	</label>
+
+	<div id = "main_content">
+		<div>
+			<p style = "font-size: 9.7vw; word-spacing: 5px; margin-top: 14px;">
+			Pouya Mohammadi
+			</p>
+		</div>
+
+		<div id = "major_categories">
+			<ul id = "whole_list" >
+				<li class = "big_elements"> <span class="caret"> Experience</span>
+					<ul class = "nested">
+						<li> <span class = "caret"> Storyfit, Inc. <a style = "color:gray;"> Austin, TX </a> </span> 
+							<ul class  = "nested">
+								<li> Title: Data Science Intern </li>
+								<li> Dates: May 2019 - Present </li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class = "big_elements"><span class="caret">  Education </span> 
+					<ul class = "nested">
+						<li> <span class = "caret"> 
+						Duke Univeristy, <a style = "color:gray;"> Durham, NC </a> 
+						</span>
+							<ul class = "nested">
+								<li> B.A. in Data Science </li>
+								<li> GPA: 3.925</li>
+								<li> Expected Graduation Year: 2021</li>
+								<li> <span class = "caret"> Dean’s List every semester </span> 
+									<ul class = "nested">
+										<li> Fall 2018: Dean's List </li>
+										<li> Spring 2019: Dean's List w/ Distinction </li> 
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li> <span class = "caret"> 
+						Trinity Univeristy, <a style = "color:gray;"> San Antonio, TX </a> 
+						</span>
+							<ul class = "nested">
+								<li> Intended Major: B.A. in Computer Science and Political Science</li>
+								<li> GPA: 3.87</li>
+								<li> Years of Attendance: 2017-18 (transferred to Duke)</li>
+								<li> Dean’s List every semester </li>
+								<li> Murchison Scholar </li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class = "big_elements"> <span class="caret"> Skills </span>
+					<ul class = "nested">
+						<li> <span class = "caret"> Programming Languages </span>
+							<ul class = "nested">
+								<li>Python</li>
+								<li> Java</li>
+								<li> R</li>
+								<li> SQL</li>
+								<li> Scala</li>
+								<li> HTML</li>
+								<li> CSS</li>
+								<li> C</li>
+							</ul>
+						</li>
+						<li> <span class = "caret">Operating Systems </span>
+							<ul class = "nested">
+								<li>Windows</li>
+								<li>Linux</li>
+							</ul>
+						</li>
+						<li> <span class = "caret">Languages </span>
+							<ul class = "nested">
+								<li>Farsi (conversational)</li>
+								<li>Latin (read and write)</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class = "big_elements"> <span class="caret"> Projects </span>
+				</li>
+				<li class = "big_elements"> <span class="caret"> Campus and Community Involvement </span>
+				</li>
+				<li class = "big_elements"> <span class="caret"> Hobbies </span>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+<script>
+var toggler = document.getElementsByClassName("caret");
+var i;
+
+for (i = 0; i < toggler.length; i++) {
+  toggler[i].addEventListener("click", function() {
+    this.parentElement.querySelector(".nested").classList.toggle("active");
+    this.classList.toggle("caret-down");
+  });
+}
+</script>
+
+</body>
+
+</html>
