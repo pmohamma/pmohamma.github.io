@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+<head>
+	<title>
+	Coursework
+	</title>
+	<link rel = "stylesheet" href="dist/courses_taken.css">
+	<script type = "text/javascript" src = "scripts/hamburger_menu.js" ></script>
+</head>
+
+<body style = "background: black;">
+	<label>
+	  <input type="checkbox" onclick = "show_noshow()" id = "menu_check"></input>
+	  <span class="menu" id = "ham_menu">
+	    <span class="hamburger"></span>
+	  </span>
+		  <ul>
+		  	  <div id = "all_menu_links">
+			  	<a class = "menu_link" href="index.html" onclick = "open_loc('index.html')">
+				    <li>
+				      Home
+				    </li>
+				</a>
+			    <a class = "menu_link" href = "index.html/#professionals" onclick = "open_loc('index.html/#professionals');">
+				    <li>
+				     Professionals
+				    </li>
+			    </a>
+			    <a class = "menu_link" href="index.html/#socials" onclick = "open_loc('index.html/#socials')">
+				    <li>
+			    	Socials
+				    </li>
+			    </a>
+			  	<a class = "menu_link" href="index.html/#about_me" onclick = "open_loc('index.html/#about_me')">
+				    <li>
+				      About Me
+				    </li>
+				</a>
+			  	<a class = "menu_link" href="index.html/#contact" onclick = "open_loc('index.html/#contact')">
+				    <li>
+				      Contact
+				    </li>
+				</a>
+			</div>
+		  </ul>
+	</label>
+	<div id = "main_content">
+		<p style = "width: 100%; font-size: 5vw; text-align:center; color:white;">
+		Courses Taken 
+		</p>
+		<div class = "section">
+			<div class = "divider">
+			  <span class = "sec_title">
+			    Computer Science
+			  </span>
+			</div>
+			<div class = "flex-container" >
+				<p> Design/Analysis of Algorithms </p>
+				<p> Intro to AI </p>
+				<p> Data Structures and Algorithms</p>
+				<p> Low-Level Computing </p>
+				<p> Discrete Mathematics </p>
+				<p> Principles Computer Science I and II </p>
+				<p> Algorithmic Culture and Politics </p>
+			</div>
+		</div>
+
+		<div class = "section">
+			<div class = "divider" >
+			  <span class = "sec_title">
+			    Statistics/Math 
+			  </span>
+			</div>
+
+			<div class = "flex-container" >
+				<p> Regression Analysis </p>
+				<p> Linear Algebra </p>
+				<p> Probability </p>
+				<p> Calculus 3 </p>
+				<p> Intro to Data Science </p>
+			</div>
+
+		</div>
+
+		<div class = "section">
+			<div class = "divider" >
+			  <span class = "sec_title">
+			    Political Science 
+			  </span>
+			</div>
+			<div class = "flex-container">
+				<p> American Politics </p>
+				<p> International Politics </p>
+				<p> U.S. Legal History </p>
+			</div>
+
+		</div>
+		<br style = "clear: both;">
+
+		<div class = "section">
+			<div class = "divider" >
+			  <span class = "sec_title">
+			    Other 
+			  </span>
+			</div>
+
+			<div class = "flex-container">
+				<p> Symbolic Logic </p>
+				<p> Intro to Entrepreneurship </p>
+				<p> Climate Changed </p>
+				<p> Introduction to Sociology </p>
+
+			</div>
+		</div>
+
+	</div>
+
+</body>
+</html>
