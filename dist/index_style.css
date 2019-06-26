@@ -90,6 +90,12 @@ label li {
 #all_menu_links{
 	display:none;
 }
+label a {
+  text-decoration: none;
+}
+label li:hover{
+  color:#F2A8A8;
+}
 
 
 body{
