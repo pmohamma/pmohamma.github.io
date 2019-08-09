@@ -280,11 +280,24 @@ div.fan_club{
 	padding-top: -20px;
 }
 
-#learn_more:hover{
-	font-size: 2vw;
+#learn_more{
+  text-decoration: none;
+  font-style: italic;
 }
 
-.space { margin-top: 10%; }
+#learn_more:hover{
+	text-decoration: underline;
+}
+
+/* Markup */
+body {
+  color: #000;
+  margin: 0;
+  font-family: "Lucida Console", Monaco, monospace;
+}
+
+
+.space { margin-top: 12%; }
 
 div.head_spacer {
 	height: 0px;
