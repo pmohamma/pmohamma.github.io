@@ -185,3 +185,15 @@ li {
   padding-top: 20%;*/
   color:gray;
 }
+
+#quiz{
+  color:black;
+}
+
+#quiz:hover{
+  opacity:0.5;
+}
+
+#quiz:visited{
+  color:gray;
+}
