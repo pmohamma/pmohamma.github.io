@@ -172,3 +172,16 @@ li {
 .nested_link:hover{
   color:navy;
 }
+
+#about-me{
+  float:right; 
+  width:39%;
+  font-size: 3vw; 
+  margin-top:-135px;
+  /*position: -webkit-sticky; 
+  position: sticky; 
+  right: 25px; 
+  top:100%; 
+  padding-top: 20%;*/
+  color:gray;
+}

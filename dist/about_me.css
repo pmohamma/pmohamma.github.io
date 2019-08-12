@@ -15,7 +15,7 @@ label .menu {
   width: 200px;
   height: 200px;
   background: rgba(0, 0, 0, 0.8);
-  border-radius: 50% 50% 50% 50%;
+  border-radius: 30% 50% 50% 50%;
   transition: 0.5s ease-in-out;
   box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
   cursor: pointer;
