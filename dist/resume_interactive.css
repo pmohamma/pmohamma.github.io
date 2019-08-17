@@ -185,3 +185,15 @@ li {
   padding-top: 20%;*/
   color:gray;
 }
+
+#download{
+  color:black;
+}
+
+#download:hover{
+  opacity:0.5;
+}
+
+#download:visited{
+  color:gray;
+}
