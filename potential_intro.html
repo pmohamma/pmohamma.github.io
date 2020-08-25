@@ -7,10 +7,20 @@
 	</title>
 	<script type = "text/javascript" src = "scripts/hamburger_menu.js" ></script>
 	<link rel = "stylesheet" href="dist/potential_intro.css">
+	<script> function loadScript(url){    
+			    var head = document.getElementsByTagName('head')[0];
+			    var script = document.createElement('script');
+			    script.type = 'text/javascript';
+			    script.src = url;
+			    head.appendChild(script);
+			}
+			loadScript('scripts/hamburger_menu.js');
+			loadScript('scripts/new_index.js');
+	</script>
 </head>
 
-<body>
-	<div class= 'container'>
+<header id = "header">
+	<div class= 'container' id = "header_container">
 	<div class="container_content">
 	<div class="container_content_inner">
 	<label>
@@ -49,21 +59,45 @@
 		  </ul>
 	</label>
 
-	<div id = "main_content">
-		<p style = "font-size: 10vw; color:black;">
-		Pouya
-		</p>
-		<p style = "font-size: 10vw; color:black; margin-top:100px">
-		Mohammadi.
-		</p>
+	<div id = "main_content" class="container_row">
+		<div id = "moving_name">
+			<p style = "font-size: 10vw; color:black;" class = "layer1">
+			Pouya
+			</p>
+			<p style = "font-size: 10vw; color:black;margin-top:-8%" class = "layer2">
+			Mohammadi.
+			</p>
+		</div>
 	</div>
 	<div class="btns">
-		<button class='btns_more' onclick="open_loc('index.html')"> &rarr; </button>
+		<button class='btns_more' id = "button_header" onclick="fadeHeader()"> &rarr; </button>
 	</div>
 </div>
 </div>
 </div>
 
+</header>
+
+<body>
+	<div id = "body_content" style="display:none; min-width: 100%">
+<!-- 	<div class = "vertical_bar" style="margin-left: 2%"></div>
+	<div class = "vertical_bar" style = "margin-left:7%"></div>
+ -->	<img id = "drawn_name" src = "images/hand-drawn-name.png" alt = "Pouya Mohammadi">
+		<div class='body_flex'>
+			<p onclick='open_from_main("portfolio.html")'>Portfolio</p>
+			<p onclick='open_from_main("about_me.html")'>About Me</p>
+			<p onclick='open_from_main("interactive_resume.html")'>Resume</p>
+			<p onclick='open_from_main("socials.html")'>Socials</p>
+			<p onclick='open_from_main("mailto:pouya.mohammadi@duke.edu")'>Contact</p>
+			<p onclick='open_from_main("professionals.html")'>Professionals</p>
+		</div>
+	<img src="images/steps_profile_pic.jpg" alt="senior picture" id ="steps_pic" class = "pics">
+	<img src="images/sitting_on_porch.jpg" alt="senior picture" id ="overalls_pic" class = "pics">
+	<img src="images/doggett.jpg" alt="senior picture" id ="doggett_pic" class = "pics">
+	<img src="images/final_four.jpg" alt="senior picture" id ="final_four_pic" class = "pics">
+	<img src="images/theater_sitting.jpg" alt="senior picture" id ="theater_pic" class = "pics">
+	<img src="images/mom_basketball.jpg" alt="senior picture" id ="mom_bball_pic" class = "pics">
+	</div>
 </body>
 
 </html>

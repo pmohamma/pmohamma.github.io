@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+<head>
+	<title>
+	Pouya's Resume
+	</title>
+	<script type = "text/javascript" src = "scripts/hamburger_menu.js" ></script>
+	<link rel = "stylesheet" href="dist/resume_interactive.css">
+</head>
+
+<body style = "background-image: url('images/desk_background.jpg')">
+	<label>
+	  <input type="checkbox" onclick = "show_noshow()" id = "menu_check"></input>
+	  <span class="menu" id = "ham_menu">
+	    <span class="hamburger"></span>
+	  </span>
+		  <ul>
+		  	  <div id = "all_menu_links">
+			  	<a class = "menu_link" href="index.html" onclick = "open_loc('index.html')">
+				    <li>
+				      Home
+				    </li>
+				</a>
+			    <a class = "menu_link" href = "index.html/#professionals" onclick = "open_loc('professionals.html');">
+				    <li>
+				     Professionals
+				    </li>
+			    </a>
+			    <a class = "menu_link" href="index.html/#socials" onclick = "open_loc('index.html#socials')">
+				    <li>
+			    	Socials
+				    </li>
+			    </a>
+			  	<a class = "menu_link" href="index.html/#about_me" onclick = "open_loc('about_me.html')">
+				    <li>
+				      About Me
+				    </li>
+				</a>
+			  	<a class = "menu_link" href="index.html/#contact" onclick = "open_loc('index.html#contact')">
+				    <li>
+				      Contact
+				    </li>
+				</a>
+			</div>
+		  </ul>
+	</label>
+
+	<div id = "main_content">
+
+	</div>
+
+<script>
+var toggler = document.getElementsByClassName("caret");
+var i;
+
+for (i = 0; i < toggler.length; i++) {
+  toggler[i].addEventListener("click", function() {
+    this.parentElement.querySelector(".nested").classList.toggle("active");
+    this.classList.toggle("caret-down");
+  });
+}
+</script>
+
+</body>
+
+</html>

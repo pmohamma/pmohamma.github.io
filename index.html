@@ -1,15 +1,28 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang = "en-US">
+
 <head>
-	<title>Pouya's Page</title>
-	<link rel="stylesheet" href="dist/index_style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!--[if lt IE 9]>
-	  <script src="https://www.noupe.comdist/html5shiv.js"></script>
-	<![endif]-->
+	<title>
+	Pouya's Page
+	</title>
 	<script type = "text/javascript" src = "scripts/hamburger_menu.js" ></script>
+	<link rel = "stylesheet" href="dist/potential_intro.css">
+	<script> function loadScript(url){    
+			    var head = document.getElementsByTagName('head')[0];
+			    var script = document.createElement('script');
+			    script.type = 'text/javascript';
+			    script.src = url;
+			    head.appendChild(script);
+			}
+			loadScript('scripts/hamburger_menu.js');
+			loadScript('scripts/new_index.js');
+	</script>
 </head>
-<body>
+
+<header id = "header">
+	<div class= 'container' id = "header_container">
+	<div class="container_content">
+	<div class="container_content_inner">
 	<label>
 	  <input type="checkbox" onclick = "show_noshow()" id = "menu_check"></input>
 	  <span class="menu" id = "ham_menu">
@@ -17,27 +30,27 @@
 	  </span>
 		  <ul>
 		  	  <div id = "all_menu_links">
-			  	<a class = "menu_link" href="#" onclick = "open_loc('#')">
+			  	<a class = "menu_link" href="index.html" onclick = "open_loc('index.html')">
 				    <li>
 				      Home
 				    </li>
 				</a>
-			    <a class = "menu_link" href = "#professionals" onclick = "open_loc('professionals.html');">
+			    <a class = "menu_link" href = "index.html/#professionals" onclick = "open_loc('index.html/#professionals');">
 				    <li>
 				     Professionals
 				    </li>
 			    </a>
-			    <a class = "menu_link" href="#socials" onclick = "open_loc('#socials')">
+			    <a class = "menu_link" href="index.html/#socials" onclick = "open_loc('index.html/#socials')">
 				    <li>
 			    	Socials
 				    </li>
 			    </a>
-			  	<a class = "menu_link" href="#about_me" onclick = "open_loc('about_me.html')">
+			  	<a class = "menu_link" href="index.html/#about_me" onclick = "open_loc('index.html/#about_me')">
 				    <li>
 				      About Me
 				    </li>
 				</a>
-			  	<a class = "menu_link" href="#contact" onclick = "open_loc('#contact')">
+			  	<a class = "menu_link" href="index.html/#contact" onclick = "open_loc('index.html/#contact')">
 				    <li>
 				      Contact
 				    </li>
@@ -46,93 +59,47 @@
 		  </ul>
 	</label>
 
-	<img id = "drawn_name" src = "images/hand-drawn-name.png" alt = "Pouya Mohammadi" style = "display: inline;">
-	<div id = "main_content">
-	<br class = "phone_breaks"><br class = "phone_breaks"><br class = "phone_breaks"><br class = "phone_breaks">
-		<p style = "color:white; font-size: 1.5vw; margin:auto; width: 80%; word-spacing: 2px; text-shadow: 2px; text-align:center">
-		A little bit about me. I am an undergraduate student at Duke University that hails from Austin, TX. I am majoring in data science, which is essentially a dual degree in computer science and statistics, and I am a huge political junkie. I love all things basketball: playing, watching, everything. And I love food. Persian food, watermelon, and sushi are my favorites (though not all together). To learn more about me, you can
-		<a id = "learn_more" href = "#about_me">
-		click here
-		</a>
-		or keep scrolling!
-		</p>
-	<div class = "space"> </div>
-	<p style = "font-size: 2.5vw; text-align:center; color: white; width: 100%; display:block"> Scroll to find out more. </p>
-
-	<div style = "padding-top: 35%"> </div>
-
- 	<div style = "background: rgba(0, 0, 0, 0.5)">
-	<div class = "sections">
-		<div class = "banners" id = "professionals">
-			<p>professionals</p>
-		</div>
-		
-		<br class = "phone_breaks"><br class = "phone_breaks"><br class = "phone_breaks">
-		
-		<p class = "href_title" id = "resume_text"><a href="resume_interactive.html">Resume</a></p>
-		<p class = "href_title"><a href="courses_taken.html">Courses Taken</a></p>
-		<div style = "padding-bottom: 17%;"> </div>
-	</div>
-	
-	<div class = "sections">
-		<div class = "banners" id = "socials">
-			<p>socials</p>
-		</div>
-		<div style = "width: 100%; font-size: 2.5vw; text-align:center; color: white; margin-top: -15px;">
-			<p> Feel free to friend or follow! </p>
-			<p style = "font-size: 1vw;"> (Disclaimer: I don't post much)
-		</div>
-		<div class="flex-container">
-			<a href = "https://www.instagram.com/go_poo_ya_pants/" style = "width:100px; opacity: 0.9"><img src = "images/instagram_icon.jpg"> </a>
-			<a href = "https://www.facebook.com/pouya.mohammadi.37" style = "width:100px; opacity: 0.9"><img src = "images/facebook_icon.png" ></a>
-			<a href = "https://twitter.com/_pouyamohammadi" style = "width:100px; opacity: 0.9"><img src = "images/twitter_icon.png" > </a>
-			<a href = "https://www.linkedin.com/in/pmohammadi/" style = "width:100px; opacity: 0.9"> <img src = "images/linkedin_icon.png"> </a>
-		</div>
-		<div  style = "margin-bottom: 100px"> </div>
-		<div style="clear:both"></div>
-	</div>
-	
-	<div class = "sections">
-		<div class = "banners" id = "about_me">
-			<p> about me </p>
-		</div>
-		<div style = "width: 80%; margin: auto; line-height: 30px; padding-bottom: 8%; text-align: center">
-			<p>
-			I'm a student of the game first and foremost. What game you might ask. Who knows? But do know that I am a hardworker and fun-loving guy. The drive most likely comes from my immigrant parents, who raised me in Austin, Texas since I was 2 years old. I attended the same school from 1st grade until college, where I am now attending Duke University in Durham, NC. I love politics, basketball, and good times with good friends and family. I am also a big fan of food. If you still haven't had enough of me, you can learn more about me <a href = "about_me.html">here.</a>
+	<div id = "main_content" class="container_row">
+		<div id = "moving_name">
+			<p style = "font-size: 10vw; color:black;" class = "layer1">
+			Pouya
+			</p>
+			<p style = "font-size: 10vw; color:black;margin-top:-8%" class = "layer2">
+			Mohammadi.
 			</p>
 		</div>
 	</div>
-
-	<div class = "sections">
-		<div class = "banners" id = "contact">
-			<p> contact me </p>
-		</div>
-		<div style = "width: 80%; margin: auto; line-height: 30px; padding-bottom: 8%; text-align: center">
-			<div class="flex-container" style = "margin-bottom: 3%; width:40%">
-				<a href = "mailto:pouya.mohammadi@duke.edu" style = "width:100px; opacity: 0.9"><img src = "images/email_icon.png"> </a>
-				<a href = "https://www.linkedin.com/in/pmohammadi/" target = "_onclick" style = "width:100px; opacity: 0.9"> <img src = "images/linkedin_icon.png"> </a>
-			</div>
-		</div>
+	<div class="btns">
+		<button class='btns_more' id = "button_header" onclick="fadeHeader()"> &rarr; </button>
 	</div>
-
-	<div class = "banners"> 
-	<p class = "fan_club" style="color:white; margin-bottom: 9px; width:100%; text-align:center;padding-top:30px"> Join my fan club. </p>
-		<div class = "fan_club">
-			<form>
-				<!-- <input class = "fan_club_join" id = "fan_club_name" type = "text" name = "name" placeholder = "Enter Full Name" required style = "margin-top: 0px; ">
-				<br><br> -->
-				<button class = "fan_club_join" id = "fan_club_button" type="button" onclick="alert('Welcome to the club! (Unfortunately GitHub does not support non-static webpages but you have joined in my heart!)">
-					Click here
-				</button>
-			</form>
-		<div style = "padding-bottom: 40px"></div>
-	</div>
-
 </div>
 </div>
-<script>
-</script>
+</div>
+
+</header>
+
+<body>
+	<div id = "body_content" style="display:none; min-width: 100%">
+<!-- 	<div class = "vertical_bar" style="margin-left: 2%"></div>
+	<div class = "vertical_bar" style = "margin-left:7%"></div>
+ -->	<img id = "drawn_name" src = "images/hand-drawn-name.png" alt = "Pouya Mohammadi">
+		<div class='body_flex'>
+			<p onclick='open_from_main("portfolio.html")'>Portfolio</p>
+			<p onclick='open_from_main("about_me.html")'>About Me</p>
+			<p onclick='open_from_main("interactive_resume.html")'>Resume</p>
+			<p onclick='open_from_main("socials.html")'>Socials</p>
+			<p onclick='open_from_main("mailto:pouya.mohammadi@duke.edu")'>Contact</p>
+			<p onclick='open_from_main("professionals.html")'>Professionals</p>
+		</div>
+	<img src="images/steps_profile_pic.jpg" alt="senior picture" id ="steps_pic" class = "pics">
+	<img src="images/sitting_on_porch.jpg" alt="senior picture" id ="overalls_pic" class = "pics">
+	<img src="images/doggett.jpg" alt="senior picture" id ="doggett_pic" class = "pics">
+	<img src="images/final_four.jpg" alt="senior picture" id ="final_four_pic" class = "pics">
+	<img src="images/theater_sitting.jpg" alt="senior picture" id ="theater_pic" class = "pics">
+	<img src="images/mom_basketball.jpg" alt="senior picture" id ="mom_bball_pic" class = "pics">
+	</div>
 </body>
+
 </html>
 
 
