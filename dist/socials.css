@@ -15,7 +15,7 @@ label .menu {
   z-index: 100;
   width: 200px;
   height: 200px;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0);
   border-radius: 50% 50% 50% 50%;
   transition: 0.5s ease-in-out;
   box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
@@ -28,7 +28,7 @@ label .hamburger {
   left: 50px;
   width: 30px;
   height: 2px;
-  background: white;
+  background: black;
   display: block;
   transform-origin: center;
   transition: 0.5s ease-in-out;
@@ -41,7 +41,7 @@ label .hamburger:after, label .hamburger:before {
   display: block;
   width: 100%;
   height: 100%;
-  background: white;
+  background: black;
 }
 label .hamburger:before {
   top: -10px;
@@ -104,4 +104,58 @@ label a {
 }
 label li:hover{
   color:#F2A8A8;
+}
+
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  width: 100%;
+  height:100%;
+  margin:auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container a{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 40%;
+  background-color: black;
+  border-color: white;
+  margin:0.5%;
+  border-radius:15px;
+  height:33.333%;
+  overflow:hidden;
+}
+
+.logos{
+  height:7em;
+  opacity:1;
+  align-items: center;
+  justify-content: center;
+  position:absolute;
+  border-radius:10px;
+}
+
+.backgrounds {
+  opacity:0.4;
+  width:100%;
+  overflow: hidden;
+}
+
+.flex-container, .main_content, html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.flex-container a:hover .backgrounds{
+  opacity:0.3;
+}
+
+.flex-container a:hover .logos {
+  transform: scale(1.1);
 }

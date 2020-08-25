@@ -197,3 +197,7 @@ li {
 #quiz:visited{
   color:gray;
 }
+
+.download {
+  text-decoration: none;
+}

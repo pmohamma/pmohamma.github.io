@@ -330,6 +330,7 @@ label li:hover{
   flex-basis:calc(50% - 10px);
   border-radius:20px;
   opacity:0.9;
+  font-family: "Cutive Mono", serif;
 }
 
 .body_flex p:hover{

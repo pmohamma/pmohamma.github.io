@@ -5,10 +5,10 @@
 	Pouya's Resume
 	</title>
 	<script type = "text/javascript" src = "scripts/hamburger_menu.js" ></script>
-	<link rel = "stylesheet" href="dist/resume_interactive.css">
+	<link rel = "stylesheet" href="dist/socials.css">
 </head>
 
-<body style = "background-image: url('images/desk_background.jpg')">
+<body>
 	<label>
 	  <input type="checkbox" onclick = "show_noshow()" id = "menu_check"></input>
 	  <span class="menu" id = "ham_menu">
@@ -21,22 +21,22 @@
 				      Home
 				    </li>
 				</a>
-			    <a class = "menu_link" href = "index.html/#professionals" onclick = "open_loc('professionals.html');">
+			    <a class = "menu_link" href = "professionals.html" onclick = "open_loc('professionals.html');">
 				    <li>
 				     Professionals
 				    </li>
 			    </a>
-			    <a class = "menu_link" href="index.html/#socials" onclick = "open_loc('index.html#socials')">
+			    <a class = "menu_link" href="socials.html" onclick = "open_loc('socials.html')">
 				    <li>
 			    	Socials
 				    </li>
 			    </a>
-			  	<a class = "menu_link" href="index.html/#about_me" onclick = "open_loc('about_me.html')">
+			  	<a class = "menu_link" href="about_me.html" onclick = "open_loc('about_me.html')">
 				    <li>
 				      About Me
 				    </li>
 				</a>
-			  	<a class = "menu_link" href="index.html/#contact" onclick = "open_loc('index.html#contact')">
+			  	<a class = "menu_link" href="mailto:pouya.mohammadi@duke.edu" onclick = "open_loc('mailto:pouya.mohammadi@duke.edu')">
 				    <li>
 				      Contact
 				    </li>
@@ -45,8 +45,32 @@
 		  </ul>
 	</label>
 
-	<div id = "main_content">
-
+	<div id = "main_content" style="height:100%">
+		<div style = "width:100% background-image: linear-gradient(dimgray, gray); justify-content: center; align-content: center; display:flex; font-size: 1.3em"> 
+			<p> My Socials </p>
+		</div>
+		<div class="flex-container">
+			<a href = "https://www.instagram.com/go_pouya_pants/">
+				<img class = "backgrounds" src = "images/instagram_background.png">
+				<img class = "logos" src = "images/instagram_icon.jpg"> 
+			</a>
+			<a href = "https://www.facebook.com/pouya.mohammadi.37" >
+				<img class = "backgrounds" src = "images/facebook_background.png">
+				<img class = "logos" src = "images/facebook_icon.png" >
+			</a>
+			<a href = "https://twitter.com/_pouyamohammadi" >
+				<img class = "backgrounds" src = "images/twitter_background.png">
+				<img class = "logos" src = "images/twitter_icon.png" > 
+			</a>
+			<a href = "https://www.linkedin.com/in/pmohammadi/" > 
+				<img class = "backgrounds" src = "images/linkedin_background.png">
+				<img class = "logos" src = "images/linkedin_icon.png"> 
+			</a>
+			<a href = "mailto:pouya.mohammadi@duke.edu" style="width:81%">
+				<img class = "backgrounds" src = "images/email_background.png">
+				<img class = "logos" src = "images/email_icon.png"> 
+			</a>
+		</div>
 	</div>
 
 <script>
