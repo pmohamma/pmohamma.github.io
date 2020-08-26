@@ -288,10 +288,6 @@ label li:hover{
   }
 }
 
-.open {
-  animation: slideIn 1.6s ease-in-out forwards;
-}
-
 #drawn_name {
   width:70%; 
   float-right; 
